@@ -3,6 +3,10 @@ body {
   background-color: #011F3F;
 }
 
+.playArea{
+  margin-top: 15%;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -12,7 +16,7 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: auto;
 
 }
@@ -51,3 +55,50 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+
+button {
+  background-color: #730c7cfb;
+  padding: 14px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 10px solid #000000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .4s;
+  margin-top: 50px;
+ }
+ 
+ button span:last-child {
+  display: none;
+ }
+ 
+ button:hover {
+  transition: .5s;
+  border: 5px dashed #000000;
+  background-color: #ffffff;
+  color: #000000;
+ }
+ 
+ button:active {
+  background-color: #87dbd0;
+ }
+
+ 
+ @media (max-width:768px) {
+    .playArea {
+    margin-top: 50%; 
+  }
+
+
+  button {
+    width: 200px; 
+    height: 50px; 
+  }
+  
+}
+
+ 
+ 

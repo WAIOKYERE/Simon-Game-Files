@@ -14,6 +14,17 @@ $(document).keypress(function () {
   }
 });
 
+
+$("#restart-btn").click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence(); 
+    started = true;
+  }
+});
+
+
+
 $(".btn").on("click", handler);
 
 function handler() {
@@ -46,6 +57,7 @@ function checkAnswer(currentLevel) {
     playSound("wrong");
 
     $("body").addClass("game-over");
+
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
